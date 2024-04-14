@@ -3,3 +3,13 @@
 # 然后在循环中，如果找到了满足条件的解，我们将其设为 True，表示已经找到了至少一个解。
 # 之后，在循环结束后，我们会检查 found_solution 的值。如果它仍然是 False，
 # 说明在循环中没有找到满足条件的解，于是我们会输出一条消息表示没有找到满足条件的情况。
+answer=False
+head=int(input("请输入头数"))
+feet=int(input("请输入脚数"))
+for x in range(0,head+1):
+    y=head-x
+    if x*2+y*4==feet:
+       print(f"只因{x}只，兔子{y}只")
+       answer=True
+if not answer:
+    print("牢底你这是正确输入吗？？")
